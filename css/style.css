@@ -490,3 +490,29 @@ main {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 1050px) and (orientation: landscape) {
+    #upside {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #esquerda p, #esquerda h3 {
+        display: block;
+    }
+
+    .profile {
+        width: auto;
+    }
+
+    #direita {
+        width: 15rem;
+    }
+
+    #links {
+        height: auto !important;
+    }
+    #links li+li {
+        margin-top: 20px;
+    }
+}
