@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: unset !important;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none !important; 
+}
+
+ul {
+    margin-bottom: 0 !important;
+}
+
+h1, h2, h3 {
+    font-size: inherit;
+    margin: inherit;
+    font-weight: initial;
+    line-height: initial;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bolder;
+}
+
+header { 
+    background: #101935;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body {
+    background-color: #f2fdff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: unset;
+    border: none;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    color: #f2fdff !important;
+    transition: ease .3s;
+    top: 0;
+    z-index: 2;
+}
+
+nav.active {
+    padding: 10px 0;
+    background: #564787;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a{
+    transition: ease .3s;
+}
+
+nav ul li a:hover {
+    color: #dbcbd8 !important;
+}
+
+nav ul li+li {
+    margin-left: 20px;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: .1em;
+}
+
+#profile {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#upside {
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: space-between;
+    color: #F2FDFF !important;
+    overflow: hidden;
+}
+
+#esquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+#esquerda p {
+    margin-top: 20px;
+}
+
+#downside {
+    background-color: #f2fdff;
+    height: 100%;
+}
+
+#downside p {
+    width: 90%;
+    margin: 10px auto 0;
+    text-align: justify;
+}
+
+.custom-shape-divider-bottom-1644640718 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1644640718 svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 1.3px);
+    height: 60px;
+}
+
+.custom-shape-divider-bottom-1644640718 .shape-fill {
+    fill: #f2fdff;
+}
+
+
+.profile {
+    height: 100%;
+    display: flex;
+}
+
+.mail {
+    background-color: #564787;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto 0;
+    transition: padding ease .3s;
+}
+
+.mail:hover {
+    padding: 10px 30px;
+}
+
+#mobile-menu {
+    height: min-content;
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 32px;
+    height: 2px;
+    background: #dbcbd8;
+    margin: 8px;
+    transition: ease .3s;
+}
+
+#mobile-menu.active .bar:first-child {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+#mobile-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#mobile-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.section {
+    padding: 30px 0 90px;
+    text-align: center;
+}
+
+.image-div {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    width: 295px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#about {
+    position: relative;
+}
+
+#aboutArea {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.image-div img{
+    width: 100%;
+}
+
+.text {
+    width: 50%;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.text section {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text section div:hover > h3{
+    color: #101935 !important;
+}
+
+.letter {
+    background-color: #9AD4D6;
+    padding: 10px 10px;
+    width: 60%;
+    margin: 20px auto 0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.letter:hover > i{
+    animation: download ease .3s;
+}
+
+.letter i {
+    position: relative;
+}
+
+@keyframes download {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 50px;
+    }
+}
+
+.section h2 {
+    width: fit-content;
+    border-bottom: solid 2px #101935;
+    margin: 0 auto;
+}
+
+.skills {
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.skills h3 {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+#trabalhos h2 {
+    margin-bottom: 20px;
+}
+
+#carrossel-container {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+main {
+    position: relative;
+}
+
+#contato {
+    background-color: #564787;
+    color: #F2FDFF !important;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    width: fit-content;
+    border-bottom: solid 2px #101935;
+    margin: 0 auto;
+}
+
+.custom-shape-divider-bottom-1644649451 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1644649451 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 78px;
+}
+
+.custom-shape-divider-bottom-1644649451 .shape-fill {
+    fill: #564787;
+}
+
+#redes {
+    font-size: 2.3rem;
+}
+
+#redes i+i {
+    margin-left: .2em;
+}
+
+.sample {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1050px){
+    #header {
+        height: 90vh;
+    }
+    
+    #profile {
+        margin-top: 20px;
+        height: fit-content;
+        width: 75%;
+        max-height: 70vh;
+    }
+
+    #nav {
+        padding: 10px 0;
+    }
+
+    #upside {
+        flex-direction: column;
+    }
+
+    #esquerda {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #esquerda p, #esquerda h3 {
+        display: none;
+    }
+
+    #downside {
+        text-align: center;
+    }
+
+    #downside p span {
+        display: none;
+    }
+
+    .mail {
+        display: none;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    #links {
+        display: none;
+        overflow: hidden;
+        border-radius: 0 0 10px 10px ;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        color: black !important;
+        width: 60%;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 0;
+        font-size: 1rem;
+        font-weight: 600;
+        animation: menu ease .3s;
+    }
+
+    @keyframes menu{
+        from{
+            height: 0px;
+            padding: 0;
+        }
+        to{
+            height: 40%;
+        }
+    }
+
+    #mobile-menu.active ~ #links {
+        display: flex;
+        position: fixed;
+        top: 58px !important;
+        background-color: #F2FDFF;
+        height: 40%;
+        text-align: center;
+    }
+
+    nav ul li+li {
+        margin: 0 !important;
+    }
+
+    #aboutArea {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 1.1rem;
+    }
+
+    .custom-shape-divider-bottom-1644640718 svg {
+        position: relative;
+        display: block;
+        width: calc(116% + 1.3px);
+        height: 40px;
+    }
+
+    .custom-shape-divider-bottom-1644642373 svg {
+        height: 40px;
+    }
+
+    .custom-shape-divider-bottom-1644649451 svg {
+        height: 40px;
+    }
+
+    .skills {
+        padding-left: 5px;
+    }
+
+    #carrossel-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) and (orientation: landscape) {
+    #upside {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #esquerda p, #esquerda h3 {
+        display: block;
+    }
+
+    .profile {
+        width: auto;
+    }
+
+    #direita {
+        width: 15rem;
+    }
+
+    #links {
+        height: auto !important;
+    }
+    #links li+li {
+        margin-top: 20px;
+    }
+}
